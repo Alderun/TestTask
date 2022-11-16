@@ -6,23 +6,27 @@ body {
   display: flex;
 }
 
-.order__input::placeholder {
-  transform: skew(45deg);
-}
-
-.order__input {
+.container {
   transform: skew(-45deg);
-  font-style: unset;
-  border: none;
   background: rgba(255, 255, 255, 0.6);
   border-width: 0.5px;
   border-color: white;
   border-style: solid;
-  font-size: 15px;
   width: 300px;
-  height: 40px;
-  padding-left: 20px;
+  height: 38px;
   margin-left: 100px;
+}
+
+.order__input {
+  background: transparent;
+  font-style: unset;
+  border: none;
+  font-size: 15px;
+  width: 260px;
+  height: 38px;
+  transform: skew(45deg);
+  margin-left: 20px;
+  outline: none;
 }
 
 .order__btn {
@@ -49,14 +53,14 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .order__input::placeholder {
+  .container {
     transform: skew(0deg);
+    background: rgba(72, 72, 72, 0.6);
+    margin-left: 10px;
   }
 
   .order__input {
     transform: skew(0deg);
-    background: rgba(72, 72, 72, 0.6);
-    margin-left: 10px;
   }
 
   .order__btn {

@@ -1,0 +1,72 @@
+body {
+  background: url(../Content/image.jpg);
+}
+
+.order {
+  display: flex;
+}
+
+.order__input::placeholder {
+  transform: skew(45deg);
+}
+
+.order__input {
+  transform: skew(-45deg);
+  font-style: unset;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  border-width: 0.5px;
+  border-color: white;
+  border-style: solid;
+  font-size: 15px;
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  margin-left: 100px;
+}
+
+.order__btn {
+  transform: skew(-45deg);
+  background-color: red;
+  border-width: 0.5px;
+  border-color: white;
+  border-style: solid;
+  font-size: 12px;
+  font-weight: bold;
+  width: 300px;
+  height: 40px;
+  margin-right: 100px;
+}
+
+.order__btn___text {
+  transform: skew(45deg);
+  display: inline-block;
+  color: white;
+}
+
+.info__container {
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .order__input::placeholder {
+    transform: skew(0deg);
+  }
+
+  .order__input {
+    transform: skew(0deg);
+    background: rgba(72, 72, 72, 0.6);
+    margin-left: 10px;
+  }
+
+  .order__btn {
+    transform: skew(0deg);
+    margin-right: 10px;
+  }
+
+  .order__btn___text {
+    transform: skew(0deg);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
